@@ -3,8 +3,8 @@
 # set -x
 set -e
 
-VERSION=${1:-22}
-
+VERSION=${1:-24}
+echo $VERSION
 docker build -t heroku-buildpack-imagemagick-webp -f "Dockerfile.$VERSION" .
 mkdir -p build
 
